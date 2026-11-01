@@ -26,6 +26,12 @@ EOC runs **two RF paths**:
 1. **Mesh:** antenna → high-power FM transceiver → **AMNC** → Pi (`10.40.0.10`)
 2. **ROIP:** field HTs → dedicated FM base → **ROIP gateway** → audio bridge → **Murmur** on the same Pi/LAN
 
+### ROIP bridge (build detail)
+
+Full hardware/software build notes: **[docs/roip-bridge.md](docs/roip-bridge.md)**
+
+![ROIP Bridge to Mumble schematic](docs/diagrams/roip-bridge-to-mumble-schematic.jpg)
+
 ### Overlay addresses (air-gapped)
 
 | IP | Role |
@@ -42,6 +48,8 @@ No WAN, public DNS, or cloud services in operations.
 | --- | --- |
 | [ip400-amnc-emcomm-architecture-roip.jpg](docs/diagrams/ip400-amnc-emcomm-architecture-roip.jpg) | **Primary** — full system with **AMNC** + **ROIP** |
 | [ip400-eoc-node-schematic-amnc-roip.jpg](docs/diagrams/ip400-eoc-node-schematic-amnc-roip.jpg) | **EOC detail** — AMNC mesh stack + ROIP→Mumble |
+| [roip-bridge-to-mumble-schematic.jpg](docs/diagrams/roip-bridge-to-mumble-schematic.jpg) | **ROIP build** — HT → interface → AllStar/SVXLink → Murmur |
+| [roip-bridge.md](docs/roip-bridge.md) | ROIP BOM, software stack, air-gap rules |
 | [ip400-amnc-emcomm-architecture.jpg](docs/diagrams/ip400-amnc-emcomm-architecture.jpg) | AMNC sites only (no ROIP) |
 | [ip400-emcomm-architecture.jpg](docs/diagrams/ip400-emcomm-architecture.jpg) | Earlier generic IP400 sketch |
 | [ip400-eoc-node-schematic.jpg](docs/diagrams/ip400-eoc-node-schematic.jpg) | Earlier EOC sketch (pre-AMNC/ROIP) |
