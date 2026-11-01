@@ -1,0 +1,25 @@
+# OS / editor
+.DS_Store
+Thumbs.db
+Desktop.ini
+*.swp
+.idea/
+.vscode/
+*.code-workspace
+
+# Secrets / local env
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+credentials.json
+
+# Dependencies / build (if added later)
+node_modules/
+dist/
+build/
+*.log
+
+# Cursor local (do not publish agent stores)
+.cursor/
