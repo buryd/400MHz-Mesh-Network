@@ -48,6 +48,7 @@ No WAN, public DNS, or cloud services in operations.
 | --- | --- |
 | [ip400-amnc-emcomm-architecture-roip.jpg](docs/diagrams/ip400-amnc-emcomm-architecture-roip.jpg) | **Primary** — full system with **AMNC** + **ROIP** |
 | [ip400-eoc-node-schematic-amnc-roip.jpg](docs/diagrams/ip400-eoc-node-schematic-amnc-roip.jpg) | **EOC detail** — AMNC mesh stack + ROIP→Mumble |
+| [ip400-sip-pbx-architecture.jpg](docs/diagrams/ip400-sip-pbx-architecture.jpg) | **SIP option** — IP400 mesh + Pi FreePBX + SIP phones |
 | [roip-bridge-to-mumble-schematic.jpg](docs/diagrams/roip-bridge-to-mumble-schematic.jpg) | **ROIP build** — HT → interface → AllStar/SVXLink → Murmur |
 | [roip-bridge.md](docs/roip-bridge.md) | ROIP BOM, software stack, air-gap rules |
 | [ip400-amnc-emcomm-architecture.jpg](docs/diagrams/ip400-amnc-emcomm-architecture.jpg) | AMNC sites only (no ROIP) |
