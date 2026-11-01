@@ -6,6 +6,31 @@ Minimal IP400 design to prove offline voice and text before AMNC + high-power FM
 
 ![2 Nucleo Mumble MeshChat architecture](diagrams/ip400-2-nucleo-mumble-meshchat-architecture.jpg)
 
+## Wiring diagram (per site)
+
+![2 Nucleo lab wiring diagram](diagrams/ip400-2-nucleo-wiring-diagram.jpg)
+
+Duplicate this stack at **Site A** and **Site B**. Only the Pi apps differ (Murmur on A). Exact SPI/UART pin map follows the current ADRCS IP400 Nucleo / UFP guide — do not guess pins from this sketch alone.
+
+| Connection | From | To | Notes |
+| --- | --- | --- | --- |
+| Host data | Pi GPIO | Nucleo | **SPI** (MOSI/MISO/SCLK/CS + GND) **or** UART (TX/RX + GND) per ADRCS image |
+| RF | Nucleo RF connector | 70 cm antenna | U.FL/SMA + short low-loss pigtail; keep coax short |
+| Operator audio | USB headset | Pi USB | Mumble mic/speakers; PTT in software |
+| Pi power | 5 V PSU (Pi 5: 5 A class) | Pi USB-C | Separate from Nucleo USB if both powered |
+| Nucleo power / debug | USB to ST-LINK | Nucleo | Lab flash/console; disconnect debugger WAN PC for air-gap drills |
+| Overlay IP | Pi host interface | IP400 stack | `10.40.0.10` (A) / `10.40.0.20` (B) |
+| On-air mesh | Antenna A | Antenna B | 70 cm 4FSK; no copper between sites |
+
+```text
+[Headset USB]──►[ Raspberry Pi ]──SPI/UART──►[ Nucleo CC2 ]──coax──►[ 70 cm antenna ]
+                      │                              │
+                 5 V PSU                        USB debug (lab only)
+                      │
+              Murmur / MeshChat (A)
+           or MeshChat + Mumble (B)
+```
+
 ## Topology
 
 | Site | RF | Host | Services |
