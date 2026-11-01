@@ -30,6 +30,8 @@ EOC runs **two RF paths**:
 
 Three-site AMNC + FM + Mumble + ROIP estimate: **[docs/bom-amnc-mumble-emcomm.md](docs/bom-amnc-mumble-emcomm.md)**
 
+Recommended FM radios (mesh / ROIP / HTs): **[docs/recommended-fm-radios.md](docs/recommended-fm-radios.md)**
+
 ### ROIP bridge (build detail)
 
 Full hardware/software build notes: **[docs/roip-bridge.md](docs/roip-bridge.md)**
@@ -56,6 +58,7 @@ No WAN, public DNS, or cloud services in operations.
 | [roip-bridge-to-mumble-schematic.jpg](docs/diagrams/roip-bridge-to-mumble-schematic.jpg) | **ROIP build** — HT → interface → AllStar/SVXLink → Murmur |
 | [roip-bridge.md](docs/roip-bridge.md) | ROIP BOM, software stack, air-gap rules |
 | [bom-amnc-mumble-emcomm.md](docs/bom-amnc-mumble-emcomm.md) | **Priced BOM** — AMNC/FM/Mumble/ROIP + resources |
+| [recommended-fm-radios.md](docs/recommended-fm-radios.md) | **FM radio picks** — mesh, ROIP, field HTs |
 | [ip400-amnc-emcomm-architecture.jpg](docs/diagrams/ip400-amnc-emcomm-architecture.jpg) | AMNC sites only (no ROIP) |
 | [ip400-emcomm-architecture.jpg](docs/diagrams/ip400-emcomm-architecture.jpg) | Earlier generic IP400 sketch |
 | [ip400-eoc-node-schematic.jpg](docs/diagrams/ip400-eoc-node-schematic.jpg) | Earlier EOC sketch (pre-AMNC/ROIP) |

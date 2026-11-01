@@ -31,7 +31,7 @@ EOC only:        Field HT → FM base → USB URI → ROIP Pi → Murmur
 | Qty | Item | Example / notes | Unit (USD) | Ext (USD) |
 | --- | ---: | --- | ---: | ---: |
 | 3 | **IP400 AMNC** | ADRCS; Pi HAT or USB; OFDM-AB into FM | **TBA*** | **TBA*** |
-| 3 | 70 cm-capable FM mobile (data/mic or packet port preferred) | Mid dual-band mobile class (e.g. Yaesu FTM-150 / FTM-500 class) | 350–550 | 1,050–1,650 |
+| 3 | 70 cm-capable FM mobile (data/mic or packet port preferred) | Prefer [FTM-150RASP](recommended-fm-radios.md) (or FTM-500/510, IC-2730) | 350–550 | 1,050–1,650 |
 | 3 | 13.8 V radio PSU (~20–30 A) | Astron / Samlex / MFJ class | 110–180 | 330–540 |
 | 3 | Base antenna 2 m/70 cm | Diamond X50A / Comet GP-3 class | 80–130 | 240–390 |
 | 3 | Mast / wall mount / grounding kit | Site-dependent | 40–120 | 120–360 |
@@ -143,6 +143,7 @@ Optional ops laptops (3×): add **$0–1,800**.
 | Diagrams | [docs/diagrams/](diagrams/) |
 | Mumble | https://www.mumble.info/ |
 | AllStarLink | https://www.allstarlink.org/ |
+| FM radio model picks | [docs/recommended-fm-radios.md](recommended-fm-radios.md) |
 | Ham dealers (radios/antennas/PSU) | DX Engineering, Gigaparts, Ham Radio Outlet, etc. |
 | Pi hardware | raspberrypi.com · major electronics distributors |
 
